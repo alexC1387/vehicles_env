@@ -11,6 +11,7 @@ st.write(df)
         
 car_data = pd.read_csv('C:/Users/erika/OneDrive/Escritorio/vehicles_env/vehicles_us.csv') # leer los datos
 hist_button = st.button('Construir histograma') # crear un botón
+scatter_button = st.button('Construir gráfico de dispersión') # crear un botón 2
         
 if hist_button: # al hacer clic en el botón
     # escribir un mensaje
@@ -22,3 +23,9 @@ if hist_button: # al hacer clic en el botón
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
 
+if scatter_button: # al hacer clic en el botón
+    # escribir un mensaje
+    st.write('Creación de gráfico de dispersión para el conjunto de datos de anuncios de venta de coches')
+
+    fig = px.scatter(car_data, x="odometer", y="price") # crear un gráfico de dispersión
+    st.plotly_chart(fig, use_container_width=True)
