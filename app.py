@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+st.header("Estadisticas de vehículos vendidos")
 # Leer el archivo CSV en un DataFrame
 df = pd.read_csv('C:/Users/erika/OneDrive/Escritorio/vehicles_env/vehicles_us.csv')
 
