@@ -1,5 +1,3 @@
 
 # vehicles_env
-Conjunto de datos de anuncios de venta de automoviles.
-Los datos basicamente clasifican las ventas en precio, año del modelo, modelo del auto, condicion, número de cilindros, tipo de combustible, odometro, tipo de transmision, color de la pintura, si tiene 4d, fecha de publicación y numero de dias que estuvo publicado.
-Con estos datos se prenetnde generar graficas que representen las caracteristicas de los automóviles mas vendidos.
+Este conjunto de datos contiene información sobre anuncios de venta de automóviles. Los datos incluyen características clave de las ventas, como el precio, año del modelo, modelo del automóvil, estado, número de cilindros, tipo de combustible, kilometraje (odómetro), tipo de transmisión, color de la pintura, si tiene tracción en las cuatro ruedas (4WD), fecha de publicación y el número de días que estuvo publicado. El objetivo es utilizar estos datos para generar gráficos que representen las características de los automóviles más vendidos.
