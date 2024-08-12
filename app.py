@@ -2,9 +2,16 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+#Encabezado
 st.header("Estadisticas de vehículos vendidos")
 # Leer el archivo CSV en un DataFrame
 df = pd.read_csv('vehicles_us.csv')
+
+# Limpiar datos
+car_data = car_data.replace({pd.NA: None, '': None})
+car_data['price'] = pd.to_numeric(car_data['price'], errors='coerce')
+car_data['odometer'] = pd.to_numeric(car_data['odometer'], errors='coerce')
+car_data.columns = car_data.columns.str.strip()
 
 # Muestra el DataFrame en la aplicación Streamlit
 st.write(df)
