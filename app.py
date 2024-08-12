@@ -4,12 +4,12 @@ import plotly.express as px
 
 st.header("Estadisticas de vehículos vendidos")
 # Leer el archivo CSV en un DataFrame
-df = pd.read_csv('C:/Users/erika/OneDrive/Escritorio/vehicles_env/vehicles_us.csv')
+df = pd.read_csv('vehicles_us.csv')
 
 # Muestra el DataFrame en la aplicación Streamlit
 st.write(df)
         
-car_data = pd.read_csv('C:/Users/erika/OneDrive/Escritorio/vehicles_env/vehicles_us.csv') # leer los datos
+car_data = pd.read_csv('vehicles_us.csv') # leer los datos
 hist_button = st.button('Construir histograma') # crear un botón
 scatter_button = st.button('Construir gráfico de dispersión') # crear un botón 2
         
