@@ -16,7 +16,7 @@ df.columns = df.columns.str.strip()
 # Muestra el DataFrame en la aplicación Streamlit
 st.write(df)
         
-car_data = pd.read_csv('vehicles_us.csv') # leer los datos
+df = pd.read_csv('vehicles_us.csv') # leer los datos
 hist_button = st.button('Construir histograma') # crear un botón
 scatter_button = st.button('Construir gráfico de dispersión') # crear un botón 2
         
