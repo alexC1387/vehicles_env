@@ -8,10 +8,10 @@ st.header("Estadisticas de vehículos vendidos")
 df = pd.read_csv('vehicles_us.csv')
 
 # Limpiar datos
-car_data = car_data.replace({pd.NA: None, '': None})
-car_data['price'] = pd.to_numeric(car_data['price'], errors='coerce')
-car_data['odometer'] = pd.to_numeric(car_data['odometer'], errors='coerce')
-car_data.columns = car_data.columns.str.strip()
+df = df.replace({pd.NA: None, '': None})
+df['price'] = pd.to_numeric(car_data['price'], errors='coerce')
+df['odometer'] = pd.to_numeric(car_data['odometer'], errors='coerce')
+df.columns = df.columns.str.strip()
 
 # Muestra el DataFrame en la aplicación Streamlit
 st.write(df)
